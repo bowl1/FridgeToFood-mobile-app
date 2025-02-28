@@ -46,5 +46,5 @@ Users can also manage their profiles and upload avatars.
   <img src="images/ios4.png" alt="Description" width="200">
   <img src="images/ios5.png" alt="Description" width="200">
   <img src="images/ios6.png" alt="Description" width="200">
-  <img src="images/And7.png" alt="Description" width="200">
+  <img src="images/ios7.png" alt="Description" width="200">
 </div>
