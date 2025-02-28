@@ -27,20 +27,24 @@ Users can also manage their profiles and upload avatars.
 
 ## Screenshot 
 
-### Android 
-<img src="images/And1.png" alt="Description" width="400">    
-<img src="images/And2.png" alt="Description" width="400">    
-<img src="images/And3.png" alt="Description" width="400">  
-<img src="images/And4.png" alt="Description" width="400"> 
-<img src="images/And5.png" alt="Description" width="400"> 
-<img src="images/And6.png" alt="Description" width="400"> 
-<img src="images/And7.png" alt="Description" width="400"> 
+### Android
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="images/And1.png" alt="Description" width="200">
+  <img src="images/And2.png" alt="Description" width="200">
+  <img src="images/And3.png" alt="Description" width="200">
+  <img src="images/And4.png" alt="Description" width="200">
+  <img src="images/And5.png" alt="Description" width="200">
+  <img src="images/And6.png" alt="Description" width="200">
+  <img src="images/And7.png" alt="Description" width="200">
+</div>
 
 ### Ios
-<img src="images/ios1.png" alt="Description" width="400">    
-<img src="images/ios2.png" alt="Description" width="400">    
-<img src="images/ios3.png" alt="Description" width="400">  
-<img src="images/ios4.png" alt="Description" width="400"> 
-<img src="images/ios5.png" alt="Description" width="400"> 
-<img src="images/ios6.png" alt="Description" width="400"> 
-<img src="images/ios7.png" alt="Description" width="400"> 
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="images/ios1.png" alt="Description" width="200">
+  <img src="images/ios2.png" alt="Description" width="200">
+  <img src="images/ios3.png" alt="Description" width="200">
+  <img src="images/ios4.png" alt="Description" width="200">
+  <img src="images/ios5.png" alt="Description" width="200">
+  <img src="images/ios6.png" alt="Description" width="200">
+  <img src="images/And7.png" alt="Description" width="200">
+</div>
