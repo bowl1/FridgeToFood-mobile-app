@@ -62,8 +62,7 @@ flutter_icons:
   android: true
   ios: true
   image_path: "assets/logo.png"  # 你的 App 图标路径
-  adaptive_icon_background: "#ffffff" # 仅适用于 Android 适配图标
-  adaptive_icon_foreground: "#ffffff" # 仅适用于 Android 适配图标
+
 
 
 # For information on the generic Dart part of this file, see the

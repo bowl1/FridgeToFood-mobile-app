@@ -22,6 +22,7 @@ Users can also manage their profiles and upload avatars.
  - Cross-platform support (iOS & Android)
 
 ## How to run 
+ - first run the backend and database from branch "backend"
  - flutter pub get
  - flutter run
 
@@ -40,6 +41,7 @@ Users can also manage their profiles and upload avatars.
 
 ### Ios
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="images/ios0.png" alt="Description" width="200">
   <img src="images/ios1.png" alt="Description" width="200">
   <img src="images/ios2.png" alt="Description" width="200">
   <img src="images/ios3.png" alt="Description" width="200">
