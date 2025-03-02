@@ -28,6 +28,8 @@ Users can also manage their profiles and upload avatars.
 
 ## Screenshot 
 
+![flow.gif](images%2Fflow.gif)
+
 ### Android
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
   <img src="images/And1.png" alt="Description" width="200">
