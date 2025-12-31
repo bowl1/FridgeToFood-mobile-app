@@ -1,27 +1,48 @@
-# Fridge to Food
-Cross-platform recipe app that helps you turn fridge ingredients into meals.
+# 🍽️ Fridge to Food - Ingredient → Recipe Assistant
+Flutter app + Node.js API that turns whatever’s in your fridge into cookable recipes, with auth, favorites, and profile management.
 
-## Overview
-- Search recipes by ingredients and refine with dietary tags (vegetarian, keto, gluten-free, etc.).
-- Browse recipe details with images, ingredients, and steps; view thumbnails with cached loading.
-- Save/unsave favorites backed by MongoDB and tied to Firebase-authenticated users.
-- Sign up/login via Firebase Auth; token forwarding to backend for protected endpoints.
-- Manage profile with avatar upload (base64 to backend) and display name.
-- Cross-platform Flutter UI (mobile/web/desktop) with bottom navigation to favorites and profile.
+## ✨ Features
+- Ingredient-first search with dietary filters (vegetarian, keto, gluten-free, etc.).
+- Recipe details with images, ingredients, and steps; cached thumbnails for smooth scrolling.
+- Favorites backed by MongoDB and tied to Firebase-authenticated users.
+- Firebase Auth login/register; tokens forwarded to backend for protected routes.
+- Profile center with avatar upload (base64 → backend) and display name.
+- Cross-platform Flutter UI (mobile/web/desktop) with bottom navigation to Favorites/Profile.
 
-## Tech Stack
-- Flutter (Dart) UI, cached network images, navigation (bottom bar), form inputs
-- Firebase Authentication for sign-up/login/token; Firebase Admin on backend for token verify
-- Node.js + Express API with CORS/body-parser; MongoDB persistence for favorites and avatars
-- RapidAPI Low Carb Recipes as the external recipe data source
-- Shell tooling: `start.sh` to orchestrate backend then frontend
+## ⚙️ Tech Stack
+| Category    | Technology |
+| ----------- | ---------- |
+| Frontend    | Flutter (Dart), cached_network_image |
+| Auth        | Firebase Authentication (client) + Firebase Admin (server) |
+| Backend     | Node.js, Express.js, CORS/body-parser middleware |
+| Database    | MongoDB (favorites, avatars) |
+| External API| RapidAPI Low Carb Recipes |
+| Tooling     | `start.sh` one-command launcher |
 
-## Project Structure
-- `frontend/` Flutter app (auth flow, recipe search/detail, filter page, favorites, profile, assets/screenshots)
-- `backend/` Express API (`routes/auth`, `routes/favorites`, `routes/avatar`, `db.js`, `firebaseAdmin.js`)
-- `start.sh` one-command launcher (installs deps if missing, starts backend, then runs Flutter)
+## 🧭 Project Structure
+```
+.
+├── frontend/                    # Flutter app
+│   ├── lib/                     # Pages: login, auth check, search, detail, favorites, profile, filters
+│   ├── images/                  # Screenshots & GIFs for README
+│   └── macos/Podfile            # macOS platform config
+├── backend/                     # Express API
+│   ├── routes/                  # auth, favorites, avatar
+│   ├── db.js                    # Mongo connection
+│   └── firebaseAdmin.js         # Firebase Admin setup
+├── start.sh                     # One-command launcher (backend + frontend)
+└── firebase.json                # Emulator config (auth)
+```
 
-## Screenshots
+## 🏗️ Architecture Overview
+- **Frontend (Flutter)**  
+  Ingredient search → dietary filter → detail view → favorite toggle (token-auth) → profile with avatar upload.
+- **Backend (Express + MongoDB)**  
+  Firebase token verification → favorites CRUD → avatar upload/storage → proxy calls to external recipe API.
+- **External data**  
+  RapidAPI Low Carb Recipes for search results and details.
+
+## 🚀 Screenshots
 
 ![flow.gif](frontend/images/flow.gif)
 

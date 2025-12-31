@@ -7,10 +7,12 @@ It allows users to search for recipes based on available ingredients, filter res
 Users can also manage their profiles and upload avatars.
 
 ## Tech Stack
- - Frontend: Flutter (Dart)
- - Backend: Node.js + Express.js
- - Database: MongoDB
- - Authentication: Firebase Authentication
+| Category       | Technology              |
+| -------------- | ----------------------- |
+| Frontend       | Flutter (Dart)          |
+| Backend        | Node.js + Express.js    |
+| Database       | MongoDB                 |
+| Authentication | Firebase Authentication |
 
 ## Features
 
@@ -21,10 +23,25 @@ Users can also manage their profiles and upload avatars.
  - Profile management with avatar uploads
  - Cross-platform support (iOS & Android)
 
+## API (Backend)
+
+Auth
+- `POST /auth/register` — Register (Firebase token required)
+- `POST /auth/login` — Login (Firebase token required)
+- `GET /auth/user/:uid` — Get user profile
+
+Favorites (Bearer Firebase ID token)
+- `GET /favorites` — List favorites for current user
+- `POST /favorites` — Add favorite
+- `DELETE /favorites/:id` — Remove favorite
+
+Avatar
+- `POST /avatar/upload` — Upload avatar (base64)
+
 ## How to run 
- - first run the backend and database from branch "backend"
- - flutter pub get
- - flutter run
+- One command (from repo root): `./start.sh <flutter-device-id> [port]`  
+  - Example: `./start.sh chrome 5001` (or `macos` / emulator ID). Installs backend deps, starts API, then runs Flutter.
+  - Set `USE_AUTH_EMULATOR=1` if you want to use the Firebase Auth emulator; otherwise it hits live Firebase.
 
 ## Screenshot 
 
