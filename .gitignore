@@ -1,0 +1,10 @@
+# Environment and secrets
+backend/.env
+backend/serviceAccountKey.json
+frontend/.env
+
+# Node modules / Flutter build
+backend/node_modules
+frontend/.dart_tool
+frontend/build
+frontend/ios/Pods
